@@ -1,0 +1,159 @@
+/*===General Start===*/
+.container
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+}
+/*===Navbar Settings Start===*/
+.nav-bar
+{
+    height: 100%;
+    width: 100%;
+    max-height: 80px;
+    margin: 0% auto;
+    text-align: center;
+    background-color: rgb(27, 111, 168);
+}
+
+.menu li
+{
+    color: #000;
+    font-size: x-large;
+    font-style: strong;
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover
+{
+    color: #fff;
+}
+/*===Navbar Settings End===*/
+
+/*===Body Settings Start===*/
+body
+{
+    margin: 0%;
+}
+
+.welcome-video
+{
+    align-content: center;
+}
+
+.intro
+{
+    margin-top: 160px;
+    color: #000000;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Github icon rollover transition function */
+.Github_img img:last-child{display: none;}
+.Github_img:hover img:first-child{display: none;}
+.Github_img:hover img:last-child{display: inline-block;}
+
+.Github_img img
+{
+    width: 80px;
+    height: 80px;
+}
+
+.LinkedIn_img img:last-child{display: none;}
+.LinkedIn_img:hover img:first-child{display: none;}
+.LinkedIn_img:hover img:last-child{display: inline-block;}
+
+.LinkedIn_img img
+{
+    width: 100px;
+    height: 80px;
+}
+
+/*===Body Settings End===*/
+
+/*===Contact Settings Begin===*/
+input[type=text] 
+{
+    width: 100%; /* Each input box covers the full width of the container */
+    padding: 12px; /* Adds padding within the text box */
+    border: 1px solid #ccc; /* Setting a solid border and its color */
+    border-radius: 4px; /* Slightly rounds the corners of the text box border */
+    box-sizing: border-box; /* This creates a box with a border around the contact form input boxes */
+    margin-top: 6px; /* Adds a margin to the top of the text box */
+    margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
+    resize: vertical; /* This allows the user to resize the text boxes vertically */
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover 
+{
+    box-shadow: 0 0 5px rgb(27, 111, 168) inset; /* This creates a blue shadow in the text box when hovered over by the user */
+}
+
+/* Submit button */
+input[type=submit] 
+{
+    background-color: black; /* Sets the background color of the submit button to black */
+    color: white; /* Sets the font color of the Submit button to white */
+    font-weight: bold; /* Makes the font of the submit button bold */
+    padding: 12px 20px; /* Adds padding to the submit button */
+    border: none; /* Removes the border from the submit button */
+    border-radius: 4px; /* Gives the submit button the same rounded corners as the text boxes */
+    cursor: pointer; /* Changes the cursor to pointer when over the submit button */
+    display: block; 
+    margin-left: auto; 
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover 
+{
+    background-color: rgb(27, 111, 168); /* Turns the background of the submit button blue when the user hovers over it */
+    color: white; /* Turns the font white when hovered over */
+}
+
+#Name, #Email
+{
+    width: 355px;
+}
+
+textarea
+{
+    width: 715px;
+    height: 120px
+}
+
+/* Form element */
+form 
+{
+    border-radius: 5px; 
+    background-color: #f2f2f2; 
+    padding: 10px; 
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Trebuchet MS", Optima;
+    text-align: left;
+    width: 735px;
+}
+/*===Contact Settings End===*/
+
+/*===Footer Settings Start===*/
+footer
+{
+    text-align: center;
+}
+/*===Footer Settings End===*/
