@@ -2,81 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Don Smith: Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
 
     <!-- Navbar -->
-    <section class="nav-bar">
-        <ul class="menu">
-            <a href="#Home" id="link"><li>Home</li></a>
-            <a href="#About" id="link"><li>About</li></a>
-            <a href="#GitHub" id="link"><li>Github</li></a>
-            <a href="#Contact" id="link"><li>Contact</li></a>
-        </ul>
-    </section>
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#Profiles">Profiles</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
 
-    <section id="Home">
-        <div class="container">
-            <video autoplay muted loop id="welcome_video">
-                <source src="./img/video/welcome.mp4" type="video/mp4"></video>
-            
-        </div>
-    </section>
+    <!-- Home/ Background video -->
+    <div id="Home">
+        <video autoplay muted loop id="Welcome_Video">
+            <source src="./img/video/welcome.mp4">
+            <!-- Display this if the video fails to play -->
+            Your browser doesn't support HTML5 videos
+        </video>
+    </div>
 
-    <section id="About">
-        <div class="container">
-            <p class="intro">Hi, I'm Don Smith<br>I'm a Software Development Engineer in Test. Originally self taught and now
-                training through the Tech Academy's Game Developer Boot Camp to have a stronger foundation and a better toolset.</p>
-        </div>
-    </section>
+    <!-- Video Text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Don Smith's Portfolio</h1>
+        <strong>
+            <p class="center">
+                My name is Don Smith, welcome to my portfolio website. On it, I will both show and tell you about my background and experience.<br>
+                Thank you for checking out my page and I hope we can connect in the future! 
+            </p>
+        </strong>
+    </div>
 
-    <!--GitHub section-->
-    <section id="GitHub">
-        <div class="container">
-            <h1>Profiles</h1>
-            <p>You can view my professional profiles here:<br></p>
-            <a class="Github_img" href="https://github.com/ACReturns" target="_blank">
-                <img src="./img/github-logo.png" alt="GitHub Logo">
-                <img src="./img/github-logo_hover.png" alt="GitHub Logo">
-            </a>
-            <a class="LinkedIn_img" href="https://www.linkedin.com/in/donald-smith-67b604a/" target="_blank">
-                <img src="./img/LinkedIn_icon.png" alt="LinkedIn Logo">
-                <img src="./img/LinkedIn_icon_hover.png" alt="LinkedIn Logo">
-            </a>
-            
-        </div>
-    </section>
-
-    <!--Contact section-->
-    <section id="Contact">
-        <div class="container">
-            <div class="heading-padding">
-                <h1 class="intro">Contact</h1>
-                <div class="contact-info">
-                    <div class="form-contact">
-                        <form action="https://formspree.io/f/maygknpq" method="POST">
-                            <p>
-                                <input type="text" id="Name" name="Name" placeholder="Name">
-                                <input type="text" id="Email" name="Email" placeholder="Email">
-                            </p>
-                            <input type="text" id="Subject" name="Subject" placeholder="Subject">
-                            <textarea type="text" id="Message" name="Message" placeholder="Message"></textarea>
-                            <input type="submit" value="SUBMIT">
-                        </form>
-                    </div>
+    <!-- Slideshow -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slides -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./img/Picture_of_Me.jpg" alt="My Picture">
+                    <div class="text">I'm available to assist you on your project!
+                        <br>I'm a full-stack software developer trained in:</div>
                 </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS and JS logos">
+                    <div class="text">HTML, CSS, JavaScript</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./img/Python.png" alt="Python logo">
+                    <div class="text">Python</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./img/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./img/SQL_and_Database.jpg" alt="SQL logo">
+                    <div class="text">Back end development, databases and SQL</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./img/Contact_Me.png" alt="Contact me image">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me</a></div>
+                </div>
+
+                <!-- Next/ Previous buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div><br>
+
+            <!-- Slideshow dots, alternate means for the end user to navigate thorough the slideshow -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- About section -->
+    <!-- TODO Update images in this section -->
+    <div class="Row" id="About">
+        <!-- Left Column -->
+        <div class="Column_2">
+            <img src="./img/About_Me.png" alt="About Me image">
+        </div>
+        <!-- Right Column -->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I'm a software developer who is always up for a challenge and loves to continue to grow in my field. 
+                With a little girl to be a role model for, I enjoy spending time with my family and shaping her into an amazing young lady.<br>
+                I'm progressing through the Game Developer Boot Camp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>
+                and trained in the following web & programming langrages: HTML, CSS, JavaScript, SQL, Python, C# and more.
+                I'm a full-stack developer and would love to work with you on your projects. <a onclick="openForm()" class="contact">Contact</a> me below. 
+            </p>
+        </div>
+    </div>
+
+    <!-- Github section -->
+    <div class="Row" id="Profiles">
+        <!-- Left Column -->
+        <div class="Column_1">
+            <h1>Profiles</h1>
+            <p>
+                You can view my professional profiles here:<br>
+                <p class="center"> Coding projects on my Github profile: <a href="https://github.com/ACReturns" target="_blank">Don Smith's Github</a></p>
+                <br>
+                <p class="center">My LinkedIN profile: <a href="https://www.linkedin.com/in/donald-smith-67b604a/s" target="_blank">Don Smith's LinkedIN</a></p>
+            </p>
+        </div>
+        <!-- Right Column -->
+        <div class="Column_2">
+            <a href="https://github.com/ACReturns" target="_blank"><img src="./img/GitHub.png" alt="GitHub Logo"></a>
+            <a href="https://www.linkedin.com/in/donald-smith-67b604a/" target="_blank"><img src="./img/LinkedIn.png" alt="LinkedIn Logo"></a>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/maygknpq" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter your email here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Enter your message here" name="message">
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
-        &copy;2023
+        <p class="center">&copy;2023</p>
     </footer>
+
+    <script src="./js/index.js"></script>
   </body>
