@@ -175,11 +175,12 @@ footer
 /* Formatting for background video */
 #Welcome_Video
 {
-    position: fixed; /* Fixes the video to the page */
+    position:absolute; /* Fixes the video to the page */
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
     bottom: 0; /* This ensures there is no space between the edge of the video and the bottom of the page */
     min-width: 100%; /* Ensures the video is displayed across the full width of the page */
     z-index: -1; /* This puts the video behind the other elements on the page */
+
 }
 
 /* Screens that are 576px and smaller will not display the background video */
@@ -350,7 +351,7 @@ footer
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 1.6%;
     padding-bottom: 2vh;
-    height: 450px; /* This sets the height of the column to 400px - this may need to be adjusted depending on the text entered */
+    height: 600px; /* This sets the height of the column to 400px - this may need to be adjusted depending on the text entered */
     background-color: #f2f2f2; /* Sets the background color of the left columns */
 }
 
@@ -359,8 +360,8 @@ footer
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 1.6%;
-    height: 450px; /* This sets the height of the column to 400px - this may need to be adjusted depending on the text entered */
-    background-color: #4d4d4d; /* Sets the background color of the right columns */
+    height: 600px; /* This sets the height of the column to 400px - this may need to be adjusted depending on the text entered */
+    background-color: #000; /* Sets the background color of the right columns */
 }
 
 .Column_2 img
@@ -414,7 +415,7 @@ footer
 {
     z-index: 8; /* This z-index ensures the contact form shows above all other elements on the page  */
     display: none; /* Setting to none as we are using JavaScript to show the contact form  */
-    position: fixed; /* This keeps the for in the same location */
+    position: fixed; /* This keeps the form in the same location */
     bottom: .5vw; /* Slightly up from the bottom of the viewport */
     right: .5vw; /* Slightly up from the right of the viewport */
 }
@@ -556,10 +557,10 @@ button:hover, .form-container .btn:hover
 }
 
 /* Media rules to increase the size of the columns for larger screens */
-@media screen and (min-width: 1725px) 
+@media screen and (min-width: 1725px)
 {
-    .Column_1 { height: 550px; }
-    .Column_2 { height: 550px; }
+    .Column_1 { height: 650px; }
+    .Column_2 { height: 650px; }
 }
 
 
