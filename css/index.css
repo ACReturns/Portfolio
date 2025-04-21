@@ -198,8 +198,7 @@ footer
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
     color: white;
     width: 100%; /* Ensures the video-text fills the width of the video */
-    height: 100vh; /* Ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
-    padding-top: 2vh; /* This adds padding around the video-text container so the background goes a bit beyond the text */
+    height: 15vh; /* Ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
     position: relative; /* This sets the text relative to its normal positioning allowing us to use the animation below */
     -webkit-animation: moveVideoText 5.75s;
     animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the moveNavText animation speed */
@@ -344,6 +343,37 @@ footer
 {
     box-sizing: border-box; /* This creates a box with a border within which we will place most of out text */
 }
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .projectInfo 
+  {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: max-height 0.2s ease-out;
+    text-align: left; /* The text is center aligned within the image */
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw; /* This gives slight spacing between the letters */
+    font-size: 1.2vw; /* font size is relative to the viewport width */
+  }
 
 .Column_1
 {

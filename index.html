@@ -20,23 +20,20 @@
 
     <!-- Home/ Background video -->
     <div id="Home">
-        <video autoplay muted loop id="Welcome_Video">
-            <source src="./img/video/welcome.mp4">
-            <!-- Display this if the video fails to play -->
-            Your browser doesn't support HTML5 videos
-        </video>
+        <!-- Video Text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Don Smith's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    My name is Don Smith, welcome to my portfolio website. On it, I will both show and tell you about my background and experience.
+                    Thank you for checking out my page and I hope we can connect in the future! 
+                </p>
+            </strong>
+        </div>
     </div>
 
-    <!-- Video Text -->
-    <div class="Video_Text">
-        <h1 class="white-text">Don Smith's Portfolio</h1>
-        <strong>
-            <p class="center">
-                My name is Don Smith, welcome to my portfolio website. On it, I will both show and tell you about my background and experience.
-                Thank you for checking out my page and I hope we can connect in the future! 
-            </p>
-        </strong>
-    </div>
+    
+    
 
     <!-- Slideshow -->
     <div id="Slideshow">
@@ -111,15 +108,15 @@
     <div class="Row" id="About">
         <h1>About</h1>
             <p>
-                I'm a software developer who is always up for a challenge and loves to continue 
-                to grow in my field. With a little girl to be a role model for, I enjoy spending time with my family and shaping her into an amazing young lady. 
-                While being in the gaming industry for the past 17 years, I've grown from QA to Engineer throughout my career. With my latest feat being the 
-                completition of a Game Developer Boot Camp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>
-                I've gained more skills by being trained in the following web & programming languages: HTML, CSS, JavaScript, SQL, Python, C#, C++ and more. 
-                I have a short game demo I created in Unity where I created the animations and programmed how the game works. If you're a fan who's enjoyed games 
-                like Streets of Rage or Double Dragons then it's worth checking out. It was a blast combining creativity and art while also getting technical 
-                and really seeing what can be done in that length of time. I'm a full-stack developer and would love to work with you on your projects. 
-                <a onclick="openForm()" class="contact">Contact</a> me below. 
+                I am a software developer who thrives on challenges and is eager to continue growing in my profession. 
+                Over the past 17 years in the gaming industry, I have progressed from QA to Engineer. 
+                My most recent achievement is completing a Game Developer Boot Camp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>. 
+                During this training, I acquired skills in various web and programming languages, including HTML, CSS, JavaScript, SQL, Python, C#, C++, and more.
+
+                Additionally, I developed several short game demos, one of which was created in Unity, 
+                where I handled both the animations and the programming of the gameplay mechanics. If you enjoy games like Streets of Rage or Double Dragon, 
+                you might find it interesting. It was a wonderful experience blending creativity and art with technical skills, all within a limited timeframe. 
+                As a full-stack developer, I would be thrilled to collaborate with you on your projects. <a onclick="openForm()" class="contact">Contact</a> me below. 
             </p>
     </div>
 
@@ -128,27 +125,36 @@
         <!-- Left Column -->
             <div class="Column_1">
                 <h1>Projects</h1>
-                <p>
-                    <a href="./projects/sor/sor.html" target="_blank">Sketch of Rage</a><br>
-                This is a 2D side scrolling game with the idea of Streets of Rage in terms of movement for the player. 
-                There are enemy spawners as well as pickups to heal the player and increase their score. 
-                This was made in Unity with C# as the scripting language & the audio credit goes to Kenneth Johnson. 
-                Click the title to give the game a try!<br>
-                </p>
-                <p>
-                    <a>RPS</a><br>
-                This is a command prompt version of Rock, Paper, Scissors created with C++. Giving the player the ability to rematch the AI
-                as well as continue to track your score for as long as you rematch. It handles edge cases when the player may 
-                enter the text for the correct option but not as expected as well as improper choices. <br>
-                </p>
+                
+                <button type="button" class="collapsible">Sketch of Rage</button>
+                <div class="projectInfo">
+                    This is a 2D side-scrolling game inspired by the movement mechanics of Streets of Rage.
+                    It features enemy spawners and pickups to heal the player and boost their score.
+                    Developed in Unity, it uses C# for scripting, with audio credits going to Kenneth Johnson.
+                    Click the link below to try out the game! <a href="./projects/sor/sor.html" target="_blank">Sketch of Rage</a>
+                </div>
+       
+                <button type="button" class="collapsible">RPS</button>
+                <div class="projectInfo">
+                    This C++ program presents a command prompt version of Rock, Paper, Scissors, allowing players to challenge the AI for rematches while keeping a continuous score. 
+                    It effectively manages edge cases, ensuring that even if players enter the correct option text in an unexpected format or make improper choices, the game responds appropriately.
+                </div>
+                   
+                <button type="button" class="collapsible" >Zombie Run</button>
+                <div class="projectInfo">
+                    This is a 3D side-scrolling game where the player must run to escape a building while being pursued by enemies. 
+                    The game features enemy spawners and pickups that allow the player to heal if they are low on health due to enemy attacks or environmental hazards. 
+                    It was developed using Unreal Editor 5, utilizing blueprints as the main scripting language.
+                </div>
             </div>
             <!-- Right Column -->
             <div class="Column_2">
                 <h1 style="color: white">Code Summaries</h1>
                 <p style="align-content: center">
                     <strong>
-                        <p>Code Summary: <a href="https://github.com/ACReturns/Sketch-of-Rage" target="_blank">Sketch of Rage Summary</a></p>
-                        <p>Code Summary: <a href="https://github.com/ACReturns/Cplusplus_Projects/blob/main/README.md#RPS" target="_blank">RPS Summary</a></p>
+                        <p><a href="https://github.com/ACReturns/Sketch-of-Rage" target="_blank">Sketch of Rage Summary</a></p>
+                        <p><a href="https://github.com/ACReturns/Cplusplus_Projects/blob/main/README.md#RPS" target="_blank">RPS Summary</a></p>
+                        <p><a href="https://github.com/ACReturns/Unreal_Editor_5_Project/tree/main" target="_blank">Zombie Run Summary</a></p>
                     </strong>
                 </p>
             </div>
@@ -165,10 +171,10 @@
         <div class="Column_1">
             <h1>Profiles</h1>
             <p>
-                You can view my professional profiles here:<br>
-                <p class="center">Coding projects on my Github profile: <a href="https://github.com/ACReturns" target="_blank">Don Smith's Github</a></p>
-                <p class="center">My LinkedIN profile: <a href="https://www.linkedin.com/in/donald-smith-67b604a/s" target="_blank">Don Smith's LinkedIN</a></p>
-                <p class="center">My Resume: <a href="DSmithResume.pdf" target="_blank">Resume</a></p>
+                You can access my professional profiles at the following links:<br>
+                <p class="center"><a href="https://github.com/ACReturns" target="_blank">Github</a></p>
+                <p class="center"><a href="https://www.linkedin.com/in/donald-smith-67b604a/" target="_blank">LinkedIN</a></p>
+                <p class="center"><a href="DSmithResume.pdf" target="_blank">Resume</a></p>
             </p>
         </div>
     </div>

@@ -66,3 +66,41 @@ document.addEventListener("click", function(event)
         closeForm()
     }
 }, false)
+
+// Collapsible function for projects
+var coll = document.getElementsByClassName("collapsible");
+var activeProject = false;
+var openProject;
+
+for (var i = 0; i < coll.length; i++) 
+    {
+        coll[i].addEventListener("click", function() 
+        {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            
+            if (openProject != null && openProject.style.display == "block")
+            {
+                openProject.classList.toggle("collapsible")
+                openProject.style.display = "none";
+                activeProject = false;
+            }
+            // If original tab is selected then just collapse it, otherwise open new tab and close old one
+            if (content == openProject)
+            {
+                content.style.display = "none";
+                openProject = null;
+            }
+            else if (content.style.display === "block") 
+                {
+                    content.style.display = "none";
+                } 
+                else 
+                {
+                    content.style.display = "block";
+                    openProject = content;
+                    activeProject = true;
+                }
+
+        });
+    }
