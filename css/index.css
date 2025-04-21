@@ -159,7 +159,6 @@ footer
 {
     background-color: #f4f4f4; /* Defines background color that will display when you hover over a link */
     color: black; /* Font color change after being hovered over */
-    font-weight: bold; /* This makes the text on the navbar bold when hovered over */
     cursor: pointer;
     transition: 0.5s ease-in; /* Creates a smooth transition for the hover trigger */
 }
@@ -229,7 +228,7 @@ footer
 {
     width: 39.5vw; /* Relative sizing of the container for the slideshow is set to 39.5% of the viewport width */
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
-    padding-top: 4%;
+    padding-top: 6%;
     position: relative; /* Sets the container relative to its normal positioning */
     margin: auto; /* This will horizontally center the container on the page */
 }
