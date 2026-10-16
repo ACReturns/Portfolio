@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instant Price Estimator — Don Smith</title>
+  <meta name="description" content="A browser-based instant quote tool for 3D-print commissions that reads STL/OBJ files and computes model volume.">
+  <meta name="theme-color" content="#070b14">
+  <meta property="og:title" content="Instant Price Estimator — Don Smith">
+  <meta property="og:description" content="A browser-based instant quote tool for 3D-print commissions that reads STL/OBJ files and computes model volume.">
+  <meta property="og:image" content="https://acreturns.github.io/Portfolio/assets/og.png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">▍</span>Don Smith</a>
+      <a class="nav-resume btn" href="../assets/Donald_Smith_Resume.pdf">Résumé ↗</a>
+    </div>
+  </header>
+  <main id="main" class="writeup">
+    <div class="wrap">
+      <a class="label back" href="../index.html#projects">← All projects</a>
+      <header>
+        <span class="label led is-wip">In progress</span>
+        <h1>Instant Price Estimator</h1>
+        <p class="lede">A quote tool for the studio’s Custom Order page: drop in a 3D model, get a price range on the spot — no back-and-forth emails.</p>
+        <dl class="facts">
+          <div><dt class="label">For</dt><dd>Ancient Design Works</dd></div>
+          <div><dt class="label">Stack</dt><dd>JavaScript · STL / OBJ parsing</dd></div>
+          <div><dt class="label">Status</dt><dd>In progress · part of the studio site</dd></div>
+        </dl>
+      </header>
+      <article>
+        <section>
+          <h2>The problem</h2>
+          <p>Every custom print request started with the same slow loop: a customer sends a file, I open it, estimate material and time, and email back a number. It doesn’t scale for a one-person shop.</p>
+        </section>
+        <section>
+          <h2>What I built</h2>
+          <p>A client-side intake page that parses uploaded STL and OBJ files right in the browser, computes the model’s volume, and turns that into an instant price range. The cost inputs are tunable, so the estimate tracks real material and machine costs. I prototyped it quickly with Claude.</p>
+        </section>
+        <section>
+          <h2>Where it stands</h2>
+          <p>It’s being built into the Ancient Design Works site. Once it’s live there, this page will link to it.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="label">© 2026 Don Smith · Orange, CA</span>
+      <a class="label" href="../index.html#contact">Get in touch →</a>
+    </div>
+  </footer>
+</body>
+</html>
