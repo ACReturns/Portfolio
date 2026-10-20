@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turtle Tester — Don Smith</title>
+  <meta name="description" content="Turtle Tester: the internal build and deployment hub Don Smith built at Turtle Rock Studios.">
+  <meta name="theme-color" content="#070b14">
+  <meta property="og:title" content="Turtle Tester — Don Smith">
+  <meta property="og:description" content="Turtle Tester: the internal build and deployment hub Don Smith built at Turtle Rock Studios.">
+  <meta property="og:image" content="https://acreturns.github.io/Portfolio/assets/og.png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">▍</span>Don Smith</a>
+      <a class="nav-resume btn" href="../assets/Donald_Smith_Resume.pdf">Résumé ↗</a>
+    </div>
+  </header>
+  <main id="main" class="writeup">
+    <div class="wrap">
+      <a class="label back" href="../index.html#projects">← All projects</a>
+      <header>
+        <span class="label led is-live">Shipped · in production</span>
+        <h1>Turtle Tester</h1>
+        <p class="lede">The build and deployment hub I built at Turtle Rock Studios — one app that took testers from “which build?” to “running on the console, bugs filed with logs.”</p>
+        <dl class="facts">
+          <div><dt class="label">Where</dt><dd>Turtle Rock Studios</dd></div>
+          <div><dt class="label">Role</dt><dd>Jr. Software Development Engineer</dd></div>
+          <div><dt class="label">Stack</dt><dd>C# · Jenkins · PlayStation &amp; Xbox SDKs · Jira API</dd></div>
+          <div><dt class="label">Status</dt><dd>Used in production · internal</dd></div>
+        </dl>
+      </header>
+      <article>
+        <section>
+          <h2>The problem</h2>
+          <p>Getting a specific build onto a specific console was a chain of manual steps: dig through the build server for the right branch and version, download it, open a separate tool to push it to the PS4/PS5 or Xbox One/Series X devkit, then repeat when the build changed. On a bad day, just finding the right build could take hours.</p>
+        </section>
+        <section>
+          <h2>What I built</h2>
+          <p>Turtle Tester connected to the Jenkins build server and listed every build with its branch, file size and version number. One action downloaded a build and launched it, or deployed it straight to the target PlayStation or Xbox hardware.</p>
+          <p>Inside the game, testers could file a bug that went directly to Jira with the logs from the exact moment the issue happened attached, and send inputs into the running build for debugging.</p>
+        </section>
+        <section>
+          <h2>The result</h2>
+          <p>The build hunt, the platform tooling and the bug report collapsed into one place. Testers stopped hopping between applications, and bugs arrived in Jira with the evidence engineers needed to reproduce them.</p>
+        </section>
+        <section>
+          <h2>Note</h2>
+          <p>This is an internal studio tool, so there is no public code or screenshots. I’m happy to walk through how it worked in a conversation.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="label">© 2026 Don Smith · Orange, CA</span>
+      <a class="label" href="../index.html#contact">Get in touch →</a>
+    </div>
+  </footer>
+</body>
+</html>
