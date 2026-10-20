@@ -109,7 +109,7 @@
     hydrate(cam);
     cam.classList.add("is-live");
     cam.querySelector(".cam-rec").textContent = "REC";
-    glitch(cam, 600);
+    step(cam); // cut straight to the next angle so the hover reveals something new
     timers.push(setInterval(() => step(cam), CYCLE_MS));
   };
   const stop = () => {
